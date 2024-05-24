@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using TempProject.Service.Controling.Application.Services.Interface;
 using TempProject.Service.Controling.Application.Services.Service;
 using TempProject.Service.Controling.Core.Repository.Interface;
 using TempProject.Service.Controling.Core.Repository.Repository;
+using TempProject.Service.Controling.Infrastructure.DataBase.Server;
 
 namespace Temp.Service.Controling.APi
 {
@@ -22,6 +24,7 @@ namespace Temp.Service.Controling.APi
             #region Config_Start
             service.AddControllers();
             service.AddEndpointsApiExplorer();
+            service.AddDbContext<TestProjectContext>(options => options.UseMySql(connectionString: _configuration.GetConnectionString("AppData"), ServerVersion.Parse("8.0.30-mysql")));
             #endregion
 
 
