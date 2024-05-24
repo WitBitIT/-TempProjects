@@ -1,0 +1,17 @@
+﻿################################################################################
+# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
+################################################################################
+
+/Service.Controling.TempProject/TempProject.Service.Controling.Core/obj/TempProject.Service.Controling.Core.csproj.nuget.g.targets
+/Service.Controling.TempProject/TempProject.Service.Controling.Core/obj/Debug/net6.0/TempProject.Service.Controling.Core.assets.cache
+*.cache
+/Service.Controling.TempProject/TempProject.Service.Controling.Core/obj/Debug/net6.0/TempProject.Service.Controling.Core.csproj.BuildWithSkipAnalyzers
+/Service.Controling.TempProject/TempProject.Service.Controling.Core/obj/Debug/net6.0/TempProject.Service.Controling.Core.csproj.FileListAbsolute.txt
+/Service.Controling.TempProject/TempProject.Service.Controling.Core/obj/Debug/net6.0/TempProject.Service.Controling.Core.dll
+/Service.Controling.TempProject/TempProject.Service.Controling.Core/obj/Debug/net6.0/TempProject.Service.Controling.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Service.Controling.TempProject/Service.Controling.TempProject/obj
+/Service.Controling.TempProject/Service.Controling.TempProject/Properties/launchSettings.json
+/Service.Controling.TempProject/TempProject.Service.Controling.Application/obj
+/Service.Controling.TempProject/TempProject.Service.Controling.Core/obj
+/Service.Controling.TempProject/Service.Controling.TempProject/appsettings.json
+/Service.Controling.TempProject/Service.Controling.TempProject/appsettings.Development.json
