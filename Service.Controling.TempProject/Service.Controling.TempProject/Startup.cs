@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using TempProject.Service.Controling.Application.Command.Test.Queries;
 using TempProject.Service.Controling.Application.Services.Interface;
 using TempProject.Service.Controling.Application.Services.Service;
 using TempProject.Service.Controling.Core.Repository.Interface;
@@ -39,10 +40,17 @@ namespace Temp.Service.Controling.APi
             service.AddScoped<ITestService, TestService>();
             #endregion
 
+            #region Queries
+            service.AddMediatR(typeof(GetStatusQueries).Assembly);
+            service.AddMediatR(typeof(StatusRequestQueries).Assembly);
+
+            #endregion
+
             #region Identity
             service.AddSwaggerGen();
 
             service.AddMediatR(Assembly.GetExecutingAssembly());
+
 
             var assembly = Assembly.GetExecutingAssembly();
             service.AddMediatR(assembly);

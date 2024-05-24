@@ -3,7 +3,7 @@ using TempProject.Service.Controling.Core.Model.Test;
 
 namespace TempProject.Service.Controling.Application.Command.Test.Queries
 {
-    public class GetStatusQueries : IRequest<StatusResponse>
+    public class GetStatusQueries : IRequest<IEnumerable<StatusResponse>>
     {
     }
 }

@@ -1,3 +1,5 @@
+using MediatR;
+using System.Reflection;
 using Temp.Service.Controling.APi;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,8 +9,11 @@ Startup startup = new(builder.Configuration);
 startup.ConfigureService(builder.Services);
 #pragma warning restore CS0612 // Typ lub sk³adowa jest przestarza³a
 
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
 var app = builder.Build();
+
+
 
 
 app.UseSwaggerUI(options =>

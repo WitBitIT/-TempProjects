@@ -8,6 +8,12 @@ namespace TempProject.Service.Controling.Core.Model.Test
         [Required]
         [MinLength(5)]
         [MaxLength(50)]
-        public string? request { get; set; }
+        public string? Name { get; set; }
+
+        [Display(Name = "DescriptionStatus")]
+        [Required]
+        [MinLength(0)]
+        [MaxLength(45)]
+        public string? Description { get; set; }
     }
 }
